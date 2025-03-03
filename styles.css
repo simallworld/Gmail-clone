@@ -12,23 +12,122 @@
 body{
     background-image: url('https://images.unsplash.com/photo-1740916856932-7b02aeca973b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
-    background-position: center;
     height: 100vh;
     width: 100%;
     backdrop-filter: blur(4px);
+    margin-top: -20px;
 }
 
 nav{
     margin: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav .nav-left{
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 1;
+    padding-left: 40px;
+    font-size: 16px;
+}
+
+.search-container {
+    position: relative;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 50px; */
+}
+
+.search-container input {
+    padding: 15px;
+    width: 700px;
+    background-color: rgba(233, 177, 220, 0.427);
+    border: none;
+    border-radius: 50px;
+    color: white;
+}
+
+.search-container .fa-search{
+    position: absolute;
+    left: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.search-container .fa-sliders{
+    position: absolute;
+    right: 20px;
+    color: rgb(255, 255, 255);
 }
 
 .fa-bars{
-    color: black;
+    color: white;
+}
+
+.fa-circle-question{
+    color: white;
+    font-size: 22px;
+}
+
+.fa-gear{
+    color: white;
+    font-size: 21px;
+}
+
+.fa-search{
+    color: white;
+    font-size: 20px;
+}
+
+.fa-braille{
+    color: white;
+    font-size: 21px;
+}
+
+.fa-circle-user{
+    color: white;
+    font-size: 21px;
+}
+
+nav .nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.main-container .aside{
+    background-color: black;
+    width: 18%;
+    height: 100vh;
+}
+
+.main-container .email-listing{
+    background-color: black;
+    width: 95%;
+    height: 100vh;
+}
+
+.main-container .right-side-toolbar{
+    background-color: black;
+    width: 5%;
+    height: 100vh;
 }
