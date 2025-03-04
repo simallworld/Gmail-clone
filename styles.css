@@ -46,7 +46,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-left: 50px; */
+    margin-left: 68px;
 }
 
 .search-container input {
@@ -109,25 +109,65 @@ nav .nav-right{
 .main-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     gap: 15px;
+    margin-top: -20px;
 }
 
 .main-container .aside{
     background-color: black;
-    width: 18%;
-    height: 100vh;
+    width: 270px;
+    height: 690px;
 }
 
-.main-container .email-listing{
-    background-color: black;
-    width: 95%;
-    height: 100vh;
+.main-container .email-listing-container{
+    background-color: rgba(255, 255, 255, 0.927);
+    width: 1300px;
+    height: 690px;
+    border-radius: 20px;
 }
 
 .main-container .right-side-toolbar{
-    background-color: black;
-    width: 5%;
-    height: 100vh;
+    /* background-color: black; */
+    width: 60px;
+    height: 505px;
 }
+
+.right-side-toolbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 36px;
+    /* position: relative; */
+}
+
+.right-side-toolbar img:first-child{
+    margin-top: 20px;
+}
+
+.right-side-toolbar img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.right-side-toolbar .fa-plus{
+    color: white;
+    font-size: 14px;
+}
+
+.right-side-toolbar .fa-angle-right{
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    bottom: 24px;
+    color: white;
+}
+
+.right-side-toolbar hr{
+    border: 1px solid rgb(208, 208, 208);
+    width: 50%;
+}
+
